@@ -6,6 +6,7 @@ export type SearchResultHitT = {
   highlights: {
     title?: string[]
     content?: string[]
+    content_explicit?: string[]
   }
   score?: number
   popularity?: number
@@ -25,7 +26,33 @@ type SearchResultsMeta = {
   size: number
 }
 
+type Aggregation = {
+  key: string
+  count: number
+}
+
+export type SearchResultAggregations = {
+  [key: string]: Aggregation[]
+}
+
 export type SearchResultsT = {
   meta: SearchResultsMeta
   hits: SearchResultHitT[]
+  aggregations?: SearchResultAggregations
+}
+
+export type SearchQueryT = {
+  query: string
+  debug: boolean
+}
+
+export type SearchValidationErrorT = {
+  error: string
+  // key: string
+}
+
+export type SearchT = {
+  search: SearchQueryT
+  results?: SearchResultsT
+  validationErrors: SearchValidationErrorT[]
 }

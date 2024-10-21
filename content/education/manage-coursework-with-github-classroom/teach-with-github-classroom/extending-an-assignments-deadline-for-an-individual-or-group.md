@@ -13,14 +13,14 @@ If you set a cutoff date for an assignment in {% data variables.product.prodname
 {% note %}
 
 **Notes:**
-- If your assignment has a deadline, but it does not have a cutoff date, you will not be able to grant students extensions. Instead, you can inform the student or group of their extension directly and ignore the "Late" label applied to the student or group's entry on the assignment overview.
-- If you grant a student or group an extension, and they submit their work after the initial cutoff date, the assignment will still be marked "Late". You can ignore the "Late" label, as it will not affect the student or group's grade, or write access to their assignment repository.
+* If your assignment has a deadline, but it does not have a cutoff date, you will not be able to grant students extensions. Instead, you can inform the student or group of their extension directly and ignore the "Late" label applied to the student or group's entry on the assignment overview.
+* If you grant a student or group an extension, and they submit their work after the initial cutoff date, the assignment will still be marked "Late". You can ignore the "Late" label, as it will not affect the student or group's grade, or write access to their assignment repository.
 
 {% endnote %}
 
 ## Extending an assignment's deadline
 
-1. Sign into {% data variables.product.prodname_classroom_with_url %}.
+{% data reusables.classroom.sign-into-github-classroom %}
 1. Navigate to your classroom.
 1. Open the assignment for which you would like to grant an extension.
 1. In your classroom's roster, find the student or group you would like to grant an extension. In that student or group's row, select {% octicon "kebab-horizontal" aria-label="the dropdown menu" %}, then click {% octicon "calendar" aria-hidden="true" %} **Extend deadline**.
